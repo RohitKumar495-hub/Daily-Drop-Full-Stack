@@ -17,9 +17,9 @@ import orderRouter from './route/order.route.js'
 
 const app = express()
 app.use(cors({
-    credentials:true, // able to access the cookies on the client side 
-    origin: process.env.FRONTEND_URL
-}))
+  origin: true,
+  credentials: true
+}));
 
 app.use(express.json())
 app.use(cookieParser())
